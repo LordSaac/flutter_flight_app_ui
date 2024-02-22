@@ -17,13 +17,13 @@ class HomeScreen extends StatelessWidget {
         title:  Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TextUtil(text: "Welcome Back!",color: Theme.of(context).primaryColor,size: 12,weight: true,),
-            TextUtil(text: "Dev_73arner",color: Theme.of(context).primaryColor,),
+            TextUtil(text: "Bienvenido!",color: Theme.of(context).primaryColor,size: 16,weight: true,),
+            TextUtil(text: "José I. Gutiérrez B.",color: Theme.of(context).primaryColor,),
           ],
         ),
 
         elevation: 0,
-        leading: Icon(Icons.account_tree,color: Theme.of(context).primaryColor,),
+        leading: Icon(Icons.airplane_ticket,color: Theme.of(context).primaryColor,),
         actions: [
 
           Container(
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
             padding:const  EdgeInsets.symmetric(horizontal: 30,vertical: 10),
             height: 60,
             alignment: Alignment.centerLeft,
-            child: TextUtil(text: "My flights",color: Theme.of(context).primaryColor,weight: true,size: 28,),
+            child: TextUtil(text: "Mis vuelos reservados",color: Theme.of(context).primaryColor,weight: true,size: 26,),
           ),
           Expanded(child: Container(
             padding:const  EdgeInsets.symmetric(horizontal: 20),

@@ -45,16 +45,14 @@ class _BookingTabBarState extends State<BookingTabBar>
          controller: _tabController,
          tabs: const <Widget>[
            Tab(
-             icon: Text("Route"),
+             icon: Text("Generales"),
            ),
            Tab(
-             icon:Text("Flight"),
+             icon:Text("Horario"),
            ),
+           // Tab( icon:Text("Seat"),),
            Tab(
-             icon:Text("Seat"),
-           ),
-           Tab(
-             icon:Text("Checkout"),
+             icon:Text("Reservar"),
            ),
          ],
        ),
@@ -64,7 +62,7 @@ class _BookingTabBarState extends State<BookingTabBar>
            children: const  <Widget>[
              RouteScreen(),
              FlightScreen(),
-             SeatScreen(),
+             // SeatScreen(),
              CheckoutScreen(),
            ],
          ),

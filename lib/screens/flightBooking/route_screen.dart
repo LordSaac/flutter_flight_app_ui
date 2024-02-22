@@ -40,10 +40,8 @@ class _RouteScreenState extends State<RouteScreen> {
           children: [
             Container(
               height: 40,
-              decoration: BoxDecoration(
-                border:Border(bottom: BorderSide(color: Theme.of(context).canvasColor))
-              ),
-              child: Row(
+              //decoration: BoxDecoration( border:Border(bottom: BorderSide(color: Theme.of(context).canvasColor))),
+             /* child: Row(
                 children: [
                   for(int i=0;i<trips.length;i++)...[
                     Expanded(
@@ -64,19 +62,40 @@ class _RouteScreenState extends State<RouteScreen> {
                     )
                   ]
                 ],
-              ),
+              ),*/
             ),
+            // const  SizedBox(height: 30,),
+              Center(
+                    child: Hero(
+                      tag: "logo",
+                      child: SizedBox(
+                      height: 125,
+                      width: 125,
+                      child: Image.asset("assets/route_2.png",)),
+                    ),
+                  ),
+            Field(controller: _fromController, hinttext: "DESDE", icon: Icons.flight_takeoff,),
             const  SizedBox(height: 30,),
-            Field(controller: _fromController, hinttext: "FROM", icon: Icons.flight_takeoff,),
+            Field(controller: _toController, hinttext: "HACIA", icon: Icons.flight_land,),
             const  SizedBox(height: 30,),
-            Field(controller: _toController, hinttext: "TO", icon: Icons.flight_land,),
+            Field(controller: _dateController, hinttext: "FECHA", icon: Icons.calendar_month,),
             const  SizedBox(height: 30,),
-            Field(controller: _dateController, hinttext: "DATE", icon: Icons.calendar_month,),
-            const  SizedBox(height: 30,),
-            Field(controller: _travelerController, hinttext: "TRAVELER", icon: Icons.group,),
-            const  SizedBox(height: 30,),
-            Field(controller: _classController, hinttext: "CLASS", icon: Icons.airline_seat_recline_extra,),
-            const  SizedBox(height: 30,),
+              Field(controller: _dateController, hinttext: "HORARIO", icon: Icons.calendar_month,),
+            const  SizedBox(height: 80,),
+            Container(
+                      height: 50,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).indicatorColor,
+                        borderRadius: BorderRadius.circular(15)
+                      ),
+                      alignment: Alignment.center,
+                      child: TextUtil(text: "Siguiente",weight: true,color: Theme.of(context).primaryColor,size: 16,),
+                    )
+            //Field(controller: _travelerController, hinttext: "TRAVELER", icon: Icons.group,),
+            //const  SizedBox(height: 30,),
+            // Field(controller: _classController, hinttext: "CLASS", icon: Icons.airline_seat_recline_extra,),
+            // const  SizedBox(height: 30,),
           ],
 
         ),

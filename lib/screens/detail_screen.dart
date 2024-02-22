@@ -25,6 +25,7 @@ class DetailScreen extends StatelessWidget {
             decoration: BoxDecoration(
 
                 borderRadius: BorderRadius.circular(10),
+                color: Colors.grey.withOpacity(0.8), // Set your desired color here
                 image: const DecorationImage(
                   image: AssetImage("assets/profile.png"),
                 )
@@ -142,12 +143,14 @@ class DetailScreen extends StatelessWidget {
                                    SizedBox(
                                        height: 70,
                                        width: 70,
-                                       child: Image.asset("assets/logo.png",color: Theme.of(context).primaryColor,)),
+                                       child: Image.asset("assets/logo.png",
+                                       //color: Theme.of(context).primaryColor,
+                                       )),
 
-                                   Icon(Icons.flight_takeoff,size: 35,color: Theme.of(context).indicatorColor,),
+                                   //Icon(Icons.flight_takeoff,size: 35,color: Theme.of(context).indicatorColor,),
                                    const  SizedBox(height: 10,),
-                                   TextUtil(text: "Total Price",size: 12,),
-                                   TextUtil(text: "\$ ${data.price}",size: 22,weight: true,color: Theme.of(context).primaryColor,),
+                                   TextUtil(text: "Flight No",size: 12,),
+                                   TextUtil(text: "KB76",size: 22,weight: true,color: Theme.of(context).primaryColor,),
 
 
                                  ],

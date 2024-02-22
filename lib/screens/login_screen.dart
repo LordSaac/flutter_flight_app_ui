@@ -41,9 +41,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Hero(
                       tag: "logo",
                       child: SizedBox(
-                      height: 130,
-                      width: 130,
-                      child: Image.asset("assets/logo.png",color: Theme.of(context).indicatorColor,)),
+                      height: 200,
+                      width: 200,
+                      child: Image.asset("assets/logo.png",)),
                     ),
                   ),
                   Field(controller: _emailController, hinttext: "E-MAIL", icon: Icons.alternate_email,),
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
               bottom: 0,
                 child: Transform.rotate(
                     angle: 6,
-                    child:const Icon(Icons.flight_takeoff,size: 100,color: Color(0xff3a5455),))),
+                    child:const Icon(Icons.flight_takeoff,size: 100,color: Color(0xFFF8C509),))),
 
           ],
         ),

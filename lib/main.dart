@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           useMaterial3: true,
-        primaryColor:const  Color(0xff415a5c),
-        indicatorColor:const  Color(0xffffcfa1),
+        primaryColor:  const Color(0xFF5C0201),
+        indicatorColor:const Color(0xFFF8C509),
         canvasColor:const  Color(0xff9dafb1)
-        //canvasColor: const Color(0xff597672),
+        //canvasColor: const Color(0xff597672)
 
       ),
       /// SPLASH SCREEN

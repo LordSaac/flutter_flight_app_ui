@@ -38,7 +38,7 @@ class AddFlightScreen extends StatelessWidget {
             padding:const  EdgeInsets.symmetric(horizontal: 30,vertical: 10),
             height: 60,
             alignment: Alignment.centerLeft,
-            child: TextUtil(text: "Add Flight",color: Theme.of(context).primaryColor,weight: true,size: 28,),
+            child: TextUtil(text: "Agendar Vuelo",color: Theme.of(context).primaryColor,weight: true,size: 28,),
           ),
           Expanded(child: Container(
           //  padding:const  EdgeInsets.symmetric(horizontal: 20),

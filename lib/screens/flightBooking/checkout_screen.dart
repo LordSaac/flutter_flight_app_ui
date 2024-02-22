@@ -45,12 +45,15 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                 SizedBox(
                                     height: 50,
                                     width: 50,
-                                    child: Image.asset("assets/logo.png",color: Theme.of(context).primaryColor,)),
+                                    child: Image.asset("assets/logo.png"
+                                    //,color: Theme.of(context).primaryColor
+                                    ,)),
 
-                                Icon(Icons.flight_takeoff,size: 35,color: Theme.of(context).indicatorColor,),
-
-                                TextUtil(text: "Total Price",size: 12,),
-                                TextUtil(text: "\$ ${flightList[0].price}",size: 22,weight: true,color: Theme.of(context).primaryColor,),
+                                //Icon(Icons.flight_takeoff,size: 35,color: Theme.of(context).indicatorColor,),
+                                 TextUtil(text: "Flight No",size: 12,),
+                                 TextUtil(text: "KB76",size: 22,weight: true,color: Theme.of(context).primaryColor,),
+                                //TextUtil(text: "Total Price",size: 12,),
+                                //TextUtil(text: "\$ ${flightList[0].price}",size: 22,weight: true,color: Theme.of(context).primaryColor,),
 
 
                               ],

@@ -46,7 +46,9 @@ class _SplashScreenState extends State<SplashScreen>  with SingleTickerProviderS
             child: SizedBox(
               height: 200,
                 width: 200,
-                child: Image.asset("assets/logo.png",color: Theme.of(context).indicatorColor,)),
+                child: Image.asset("assets/logo.png",
+                //color: Theme.of(context).indicatorColor,
+                )),
           ),
         ),
       ),
